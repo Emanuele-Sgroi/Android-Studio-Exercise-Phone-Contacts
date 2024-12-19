@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Phone_Contact" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="MySearchViewTheme">
+        <item name="android:textColorHint">@color/neutral</item>
+    </style>
+</resources>

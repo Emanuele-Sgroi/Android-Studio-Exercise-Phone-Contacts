@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/rounded_bg"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp">
+
+    <!-- Contact Image -->
+    <FrameLayout
+        android:id="@+id/image_fame"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:clipToOutline="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circle_background_dark">
+
+        <ImageView
+            android:id="@+id/contact_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="Contact Image"
+            android:src="@drawable/man1" />
+    </FrameLayout>
+
+    <!-- Contact Name -->
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Contact Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_fame"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"/>
+
+    <!-- Phone Number -->
+    <TextView
+        android:id="@+id/contact_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        app:layout_constraintTop_toBottomOf="@id/contact_name"
+        app:layout_constraintStart_toStartOf="@id/contact_name"
+        app:layout_constraintEnd_toEndOf="@id/contact_name" />
+
+    <!-- Email Address -->
+    <TextView
+        android:id="@+id/contact_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textSize="10sp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/contact_phone"
+        app:layout_constraintStart_toStartOf="@id/contact_name"
+        app:layout_constraintEnd_toEndOf="@id/contact_name"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Phone Icon -->
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/placeholder"
+        android:contentDescription="Phone Icon"
+        app:layout_constraintTop_toTopOf="@id/contact_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/contact_email"
+        android:layout_marginEnd="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
