@@ -15,4 +15,4 @@ The user can also place a call directly from the app, and when this happens, the
     - Make calls directly from the app.
     - Automatically save the contact to the phone’s rubric, including the name, email, phone number, and photo.
 
-## Created for academic purposes.
+***Created for academic purposes.***
